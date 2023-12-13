@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
-import LoginButton from './LoginButton';
-import LogoutButton from './LogoutButton';
-import Profile from './Profile';
-import GratitudeNotes from './GratitudeNotes';
+import { Route, Routes } from 'react-router-dom';
+
+import Home from './routes/Home';
+import Notes from './routes/Notes';
+import Note from './routes/Note';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-       <GratitudeNotes/>
+    <Routes>
+        <Route exact path="/" element={<Home/>} />
+        <Route path="/notes" element={<Notes/>} />
+        <Route path="/note" element={<Note/>} />
 
-        <LoginButton/>
-        <LogoutButton/>
-        <Profile/>
-
-
-      </header>
-    </div>
+        {/* Other routes can be added here */}
+    </Routes>
   );
 }
 
