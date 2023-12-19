@@ -1,23 +1,30 @@
-import {useEffect} from 'react'
+import { useEffect } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
+import "./home.css";
 
 const Home = () => {
-
-  const { loginWithRedirect ,logout } = useAuth0();
-
-  useEffect(() => {
-
-  })
-
   return (
+    <>
+      <section className="banner dual-radial-gradient">
+        <div className="wrapper">
 
-    <div>Home
-    <button onClick={() => loginWithRedirect()}>Log In</button>
-    <button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
-      Log Out
-    </button>
-    </div>
-  )
-}
+        <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h1>
+        <span className="subtitle">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam fugit
+          qui excepturi?
+        </span>
+        <div className="note">
+          <span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+            temporibus possimus quaerat impedit amet id suscipit, placeat,
+            ratione maxime laboriosam vitae aspernatur ipsam.
+          </span>
+        </div>
+        </div>
 
-export default Home
+      </section>
+    </>
+  );
+};
+
+export default Home;
