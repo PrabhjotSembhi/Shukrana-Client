@@ -5,7 +5,6 @@ const Note = () => {
   const [notes, setNotes] = useState([]);
   const { user } = useAuth0();
 
-
   const fetchNotes = async () => {
     try {
       const response = await fetch(
