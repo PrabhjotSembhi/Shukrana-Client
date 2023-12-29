@@ -1,4 +1,23 @@
+header{
+    width: 100%;
+    position: absolute;
+}
+
 header .wrapper{
+    padding: 10px 0;
     display: flex;
     justify-content: space-between;
+}
+
+nav{
+    width: 280px;
+    display: flex;
+    justify-content: space-around;
+align-items: center;}
+
+.NavItem{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16px;
+    color: #141414;
+    text-decoration: none;
 }

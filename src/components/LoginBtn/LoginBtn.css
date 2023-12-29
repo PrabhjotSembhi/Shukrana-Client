@@ -1,0 +1,10 @@
+.GoogleBtn{
+    box-shadow: none;
+    border: solid #151515 1px;
+    border-radius: 50px;
+    font-family: "Josefin Sans", sans-serif;
+    padding: 10px 20px 8px 20px;
+    background: white;
+    font-size: 16px;
+
+}

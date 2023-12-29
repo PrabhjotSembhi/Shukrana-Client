@@ -42,10 +42,12 @@ const Notes = () => {
     <>
       <section className="dual-radial-gradient">
         <div className="wrapper">
+          <h2>Lorem ipsum dolor sits.</h2>
+          <span className="subtitle">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          </span>
 
-          <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-          <span className="subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur corporis illum sit.</span>
-
+          <div className="formContainer">
 
 
           <form onSubmit={handleSubmit}>
@@ -53,18 +55,24 @@ const Notes = () => {
               type="text"
               id="title"
               value={title}
+              placeholder="Title"
               onChange={(e) => setTitle(e.target.value)}
               required
             />
-            <input
+            <textarea
               type="text"
               id="content"
+              placeholder="I am thankful for .."
               value={content}
               onChange={(e) => setContent(e.target.value)}
               required
             />
-            <button type="submit">Submit</button>
+            <button className="formBtn" type="submit">Submit</button>
           </form>
+
+          </div>
+
+
         </div>
       </section>
     </>

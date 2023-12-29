@@ -1,43 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Urbanist&display=swap');
-  :root {
-  /* Primary colors */
-  --bg-light: #91ffd9;
-
-  --color-primary-light: #91ffd9;
-  --color-primary: #4da286;
-  --color-primary-dark: #132a23;
-
-  /* Secondary colors */
-  --color-secondary-light: #ffc971;
-  --color-secondary: #ffb946;
-  --color-secondary-dark: #cc963b;
-
-  /* Backgrounds */
-  --color-background-light: #f5f5f5;
-  --color-background-dark: #1e1e1e;
-
-  /* Text colors */
-  --color-text-light: #333;
-  --color-text-dark: #f5f5f5;
-
-  /* Accent colors */
-  --color-accent: #ff8c42;
-  --color-accent-light: #ffad71;
-  --color-accent-dark: #cc693b;
-
-  /* Borders */
-  --color-border-light: #dcdcdc;
-  --color-border-dark: #555;
-
-  /* Additional */
-  --color-success: #5cb85c;
-  --color-error: #d9534f;
-}
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border;
+  box-sizing: border-box;
   font-family: 'Urbanist', sans-serif;
 
 }
